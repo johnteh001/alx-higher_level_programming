@@ -3,3 +3,4 @@ if [ -z "$PYFILE" ]; then
 echo "Error: PYFILE environment variable not set." >&2
 exit 1
 fi
+python3 "$PYFILE"
