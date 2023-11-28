@@ -1,0 +1,8 @@
+#!/bin/bash
+export PYCODE='print(f"Best School: {88+10}")'
+if [ -z "$PYCODE" ]; then
+    echo "Error: PYCODE environment variable not set." >&2
+    exit 1
+fi
+
+python3 -c "$PYCODE"
