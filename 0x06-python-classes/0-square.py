@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+''' description of module '''
+
 
 class Square:
-    """Empty class that defines a square."""
+    ''' A Sqaure; description for square '''
     pass

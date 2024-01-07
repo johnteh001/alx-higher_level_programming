@@ -1,21 +1,18 @@
 #!/usr/bin/python3
+"""Square module - initializes class square"""
+
 
 class Square:
-    """Class that defines a square."""
+    """Square defines the object square using private attribute."""
 
-    def __init__(self, size=0):
-        """Initialization method with optional size.
+    def __init__(self, size):
+        """__init__ - initializes the string with __size variable.
+
 
         Args:
-            size (int): Size of the square (default is 0).
+            __size(str): private argument without specified argument
 
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
-        """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+
+         """
+
+        self.__size = size
