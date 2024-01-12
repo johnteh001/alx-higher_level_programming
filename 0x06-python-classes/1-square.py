@@ -1,8 +1,18 @@
 #!/usr/bin/python3
+"""Square module - initializes class square"""
+
 
 class Square:
-    """Class that defines a square."""
+    """Square defines the object square using private attribute."""
 
     def __init__(self, size):
-        """Initialization method with size (no type/value verification)."""
+        """__init__ - initializes the string with __size variable.
+
+
+        Args:
+            __size(str): private argument without specified argument
+
+
+         """
+
         self.__size = size
