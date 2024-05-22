@@ -1,13 +1,13 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 const request = require('request');
+const movieId = process.argv[2];
 
-if (process.argv.length < 3) {
+if (!movieId) {
     console.log('Usage: ./101-starwars_characters.js <movie_id>');
     process.exit(1);
 }
 
-const movieId = process.argv[2];
 const url = `https://swapi.dev/api/films/${movieId}/`;
 
 request(url, { json: true }, (error, response, body) => {
@@ -21,6 +21,7 @@ request(url, { json: true }, (error, response, body) => {
     }
 
     const characterUrls = body.characters;
+
     characterUrls.forEach((characterUrl) => {
         request(characterUrl, { json: true }, (error, response, body) => {
             if (error) {
